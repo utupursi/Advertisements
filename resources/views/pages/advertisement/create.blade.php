@@ -152,19 +152,19 @@
 
                             <h4 style="margin-bottom: 15px">Salary</h4>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="salary_type[month]" id="month">
+                                <input class="form-check-input" type="radio" name="salary_type" value="month" id="month">
                                 <label class="form-check-label" for="month">
                                     Month
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="salary_type[day]" id="day">
+                                <input class="form-check-input" type="radio" name="salary_type" value="day" id="day">
                                 <label class="form-check-label" for="day">
                                     Day
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="salary_type[by_agreement]" id="by_agreement">
+                                <input class="form-check-input" type="radio" name="salary_type" value="by_agreement" id="by_agreement">
                                 <label class="form-check-label" for="by_agreement">
                                     By agreement
                                 </label>
