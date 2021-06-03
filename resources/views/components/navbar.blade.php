@@ -30,18 +30,18 @@
                         </li>
                     @endif
                 @else
-                    <li class="nav-item"><a class="nav-link">Publish</a></li>
+                    <li class="nav-item"><a href="{{route('advertCreateView')}}" class="nav-link">Publish</a></li>
                     <li class="nav-item dropdown">
 
                         <div style="border:1px solid #dfe0e7;border-radius: 5px;">
-                        <img src="https://ss.ge/img/user-icon.svg">
-                        <a  id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+{{--                        <img src="https://ss.ge/img/user-icon.svg">--}}
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
                         </a>
                         </div>
 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

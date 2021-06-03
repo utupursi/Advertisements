@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdvertisementController;
+use App\Http\Controllers\PublishController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,8 +17,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-       return view('home');
+    return view('home');
 })->name('home');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('advert-create', [AdvertisementController::class, 'create'])->name('advertCreateView');
+    Route::post('advert-store', [AdvertisementController::class, 'store'])->name('advertCreate');
+});
 
 Auth::routes();
 
