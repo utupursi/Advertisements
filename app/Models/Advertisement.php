@@ -21,6 +21,7 @@ class Advertisement extends Model
     const FULL_TIME = "Full Time";
     const PART_TIME = "Part Time";
     const REMOTE = "Remote";
+
     use HasFactory, Notifiable;
 
     /**
@@ -29,10 +30,18 @@ class Advertisement extends Model
      * @var array
      */
     protected $fillable = [
-        'position',
-        'status',
+        'category_id',
+        'city_id',
+        'work_schedule',
+        'experience',
         'title',
-        'description'
+        'description',
+        'duties',
+        'requirements',
+        'salary_type',
+        'salary_amount',
+        'phone',
+        'email'
     ];
 
     /**

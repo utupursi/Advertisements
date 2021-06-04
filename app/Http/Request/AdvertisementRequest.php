@@ -24,7 +24,7 @@ class AdvertisementRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'location' => 'required|string|max:255',
+            'city' => 'required|string|max:255',
             'category' => 'required|string|max:255',
             'work_schedule' => 'required|string|max:255',
             'experience' => 'required|string|max:255',

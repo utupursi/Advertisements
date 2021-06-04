@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\AdvertisementController;
-use App\Http\Controllers\PublishController;
+use App\Http\Controllers\AdvertisementController;;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
